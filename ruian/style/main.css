@@ -1,0 +1,35 @@
+.tip {
+    background: #fff;
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #CCC;
+}
+.move_top_hr::before {
+    border-top: 0
+}
+.p_tb0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.m_t0 {
+    margin-top: 0
+}
+.f15 {
+    font-size: 14px;
+}
+.t_a_r {
+    text-align: right;
+}
+.f_l{
+   float: left; 
+}
+check::before,check::after{
+    border-top: 0;
+    border-bottom: 0;
+}
+.w_a {
+    width: auto;
+}
+.b_c_w {
+    background-color: #fff;
+}
