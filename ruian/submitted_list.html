@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>审批</title>
+    <link rel=stylesheet href=https://res.wx.qq.com/open/libs/weui/1.1.1/weui.min.css>
+    <link rel=stylesheet href="./style/main.css" />
+    <style>
+        body,
+        html {
+            height: 100%;
+            background-color: #f8f8f8
+        }
+
+        body {
+            font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif
+        }
+
+        .item {
+            padding: 10px 0
+        }
+
+        .item__title {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: #999;
+            font-weight: 400;
+            font-size: 14px
+        }
+
+        .item__ctn {
+            padding: 0 15px
+        }
+
+        .page_feedback {
+            padding: 15px;
+            overflow: auto;
+            background-color: #FFF
+        }
+
+        label>* {
+            pointer-events: none
+        }
+
+        .weui-picker__item {
+            padding: 0;
+            height: 34px;
+            line-height: 34px
+        }
+    </style>
+</head>
+
+<body ontouchstart>
+    <!-- <p id=bear></p> -->
+    <div class="page__bd">
+        <!--<a href="javascript:;" class="weui-btn weui-btn_primary">点击展现searchBar</a>-->
+        <div class="weui-search-bar" id="searchBar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input type="search" class="weui-search-bar__input" placeholder="搜索" required="">
+                    <a href="javascript:" class="weui-icon-clear"></a>
+                </div>
+                <label class="weui-search-bar__label">
+                    <i class="weui-icon-search"></i>
+                    <span>搜索</span>
+                </label>
+            </form>
+            <a href="javascript:" class="weui-search-bar__cancel-btn">取消</a>
+        </div>
+        <!-- <div class="weui-cells searchbar-result" id="searchResult" style="display: none;">
+           
+        </div> -->
+    </div>
+    <div class="b_c_w f14">
+        <a class="weui-cell weui-cell_access p_0 b_b_1" href="javascript:;">
+            <div class="f14 w_100">
+                <div class="weui-media-box weui-media-box_text">
+                    <!-- <h4 class="weui-media-box__title f_w_7">用车</h4> -->
+                    <div class="weui-flex">
+                        <!-- <div class="weui-cell weui-cell_access"> -->
+                        <h4 class=" weui-flex__item weui-media-box__title f_w_7">
+                            <span style="vertical-align: middle">用车</span>
+                            <span class="weui-badge great auditing" style="margin-left: 5px;">审批中</span>
+                        </h4>
+                        <!-- <div class="weui-flex__item">
+                                                
+                                            </div> -->
+                        <div class="weui-flex__item t_a_r">昨天</div>
+                        <!-- </div> -->
+                    </div>
+
+                    <div class="weui-flex">
+                        <div class="weui-flex__item">
+                            <div class="weui-cell p_0">
+                                <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+                                    <!-- <img src="https://weui.io/work/images/pic_160.png" style="width: 50px;display: block"> -->
+                                    <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span> -->
+                                    <p class="c_9">事由</p>
+                                </div>
+                                <div class="weui-cell__bd">
+                                    <p>督察检查</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- <div class="weui-tab" id="tab">
+        <div class="weui-navbar">
+            <div class="weui-navbar__item">待处理</div>
+            <div class="weui-navbar__item">已处理</div>
+        </div>
+        <div class="weui-tab__panel">
+            <div class="weui-tab__content">反馈页</div>
+            <div class="weui-tab__content">表单页</div>
+        </div>
+    </div> -->
+    <script type="text/javascript" src="./js/weui.js"></script>
+    <script type="text/javascript" src="./js/zepto.min.js"></script>
+
+</body>
+<script type="text/javascript">
+    weui.tab('#tab', {
+        defaultIndex: 0,
+        onChange: function (index) {
+            console.log(index);
+        }
+    });
+    weui.searchBar('#searchBar');
+
+</script>
+
+</html>

@@ -14,7 +14,7 @@
 .m_t0 {
     margin-top: 0
 }
-.f15 {
+.f14 {
     font-size: 14px;
 }
 .t_a_r {
@@ -32,4 +32,47 @@ check::before,check::after{
 }
 .b_c_w {
     background-color: #fff;
+}
+.p_0 {
+    padding: 0;
+}
+.f_w_7{
+    font-weight: 700;
+}
+.c_9 {
+    color:#999;
+}
+.h_10 {
+    height: 10%;
+}
+.h_93{
+    height: 93%;
+}
+.b_b_1{
+    border-bottom: 1px solid #ccc;
+}
+.t_a_c{
+    text-align: center;
+}
+.w_100{
+    width: 100%;
+}
+.t_a_r {
+    text-align: right;
+}
+.submit {
+    position: absolute;
+    bottom: 0;
+    width:100%
+}
+.great{
+    color: #78ef78;
+    background: #fff;
+    border: 1px solid #78ef78;
+    border-radius: 0;
+    font-weight: 100
+}
+.auditing {
+    color: #1D59B4;
+    border: 1px solid #1D59B4;
 }
