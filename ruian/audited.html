@@ -19,7 +19,10 @@
                     <!-- <span class="weui-badge" style="position: absolute;top: -.4em;right: -.4em;">8</span> -->
                 </div>
                 <div class="weui-cell__bd">
-                    <h4 class="weui-media-box__title f_w_7">谁的用车</h4>
+                    <h4 class="weui-media-box__title f_w_7">
+                        <span style="vertical-align: middle">我的用车</span>
+                        <span class="weui-badge great auditing chang_f12" style="margin-left: 5px;">审批中</span>
+                    </h4>
                 </div>
             </div>
             <div class="weui-flex">
@@ -119,13 +122,55 @@
                 </div>
             </div>
         </div>
-        <div class="b_c_w submit">
+        <div class="b_c_w tip" style="margin-top:5px">
+            <div class="advice flow">审批流程</div>
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <div class="weui-cell weui-cell_access p_0 ">
+                        <!-- <div class="f14"> -->
+                        <div class="flow_agree weui-media-box_text w_100">
+                            <i class="weui-icon-circle f14 flow_agree_icon"></i>
+                            <img src="https://weui.io/work/images/pic_160.png" class="small_img">
+                            <span class="f_w_7 ">某某某·审批中</span>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="b_c_w submit b_t_1">
+            <div class="advice c_9">审批意见</div>
+            <div class="weui-flex">
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
+                        <div class="weui-media-box weui-media-box_text w_100 t_a_c">
+                            <i class="weui-icon-success-no-circle f14"></i> 同意
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
+                        <div class="weui-media-box weui-media-box_text w_100 t_a_c">
+                            <i class="weui-icon-cancel f14"></i> 驳回
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-flex__item">
+                    <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
+                        <div class="weui-media-box weui-media-box_text w_100 t_a_c">
+                            <i class="weui-icon-circle f14"></i> 转审
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div> -->
+        <div class="b_c_w submit b_t_1">
             <div class="weui-flex">
                 <div class="weui-flex__item">
                     <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
                         <!-- <div class="f14"> -->
                         <div class="weui-media-box weui-media-box_text w_100 t_a_c">
-                            <i class="weui-icon-success-no-circle f14"></i> 同意
+                            <i class="weui-icon-success-no-circle f14"></i> 催办
                         </div>
                         <!-- </div> -->
                     </a>
@@ -134,7 +179,7 @@
                     <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
                         <!-- <div class="f14"> -->
                         <div class="weui-media-box weui-media-box_text w_100 t_a_c">
-                            <i class="weui-icon-cancel f14"></i> 驳回
+                            <i class="weui-icon-cancel f14"></i> 撤销
                         </div>
                         <!-- </div> -->
                     </a>
@@ -143,14 +188,13 @@
                     <a class="weui-cell weui-cell_access p_0 " href="javascript:;">
                         <!-- <div class="f14"> -->
                         <div class="weui-media-box weui-media-box_text w_100 t_a_c">
-                            <i class="weui-icon-circle f14"></i> 转审
+                            <i class="weui-icon-circle f14"></i> 重新提交
                         </div>
                         <!-- </div> -->
                     </a>
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="./js/zepto.min.js"></script>
